@@ -1,8 +1,8 @@
 /**
  * dsh-copy-as — browser half.
  *
- * 给助手消息提供「复制为 ▸ Markdown / 纯文本 / 富文本」三个出口：
- *  - 右键菜单：调用官方 `contextMenus` 服务，贡献 `chatMessage` 目标的三个扁平条目；
+ * 给助手消息提供「复制为 ▸」六个出口（Markdown / 纯文本 / 富文本 / TSV / LaTeX / JSON）：
+ *  - 右键菜单：调用官方 `contextMenus` 服务，贡献 `chatMessage` 目标的六个扁平条目；
  *  - 消息按钮：注册到 `conversation.chat.assistant-actions` 插槽。
  *
  * 富文本走 `text/html`，粘进 Word / WPS 时保留标题、列表、代码块与表格样式，

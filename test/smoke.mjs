@@ -27,7 +27,7 @@ const HTML = `<!doctype html><html><body>
 </div>
 </body></html>`
 
-const dom = new JSDOM(HTML, { url: 'http://127.0.0.1:59559/' })
+const dom = new JSDOM(HTML, { url: 'https://example.com/' })
 const { window } = dom
 globalThis.window = window
 globalThis.document = window.document

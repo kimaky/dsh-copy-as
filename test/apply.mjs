@@ -13,7 +13,7 @@ const HTML = `<!doctype html><html><body>
 <div data-chat-flow-kind="assistant"><div data-chat-content><p>正文<strong>粗</strong></p></div></div>
 </body></html>`
 
-const dom = new JSDOM(HTML, { url: 'http://127.0.0.1:59559/' })
+const dom = new JSDOM(HTML, { url: 'https://example.com/' })
 const { window } = dom
 globalThis.window = window
 globalThis.document = window.document
