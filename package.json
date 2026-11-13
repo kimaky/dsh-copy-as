@@ -1,0 +1,55 @@
+{
+  "name": "dsh-copy-as",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Copy assistant output as Markdown, plain text, rich text, TSV, LaTeX or JSON.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "client-plugin",
+    "copy",
+    "clipboard",
+    "markdown",
+    "word"
+  ],
+  "license": "MIT",
+  "author": "kimaky",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimaky/dsh-copy-as.git"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0",
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/apply.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.0"
+  }
+}
