@@ -34,9 +34,22 @@
 
 ## 安装
 
+从 npm 装（包名 `dsh-copy-as`）：
+
 ```powershell
-# 在 DSH 里（或让它代跑）
-plugin_manager action=install_bundle target=F:\Project\system-cleaning\dsh-copy-as
+plugin_manager action=install_bundle target=dsh-copy-as
+```
+
+等价的命令行形式，`<profile>` 换成宿主实际使用的 profile（桌面端一般是 `desktop`）：
+
+```powershell
+dsh plugin --profile <profile> add dsh-copy-as
+```
+
+从源码装（改完不用重装，安装记录是指向源码目录的软链）：
+
+```powershell
+plugin_manager action=install_bundle target=<本地源码目录的绝对路径>
 ```
 
 装完 **刷新浏览器页面**（客户端插件在刷新时由 client-modules 重新扫描）。
