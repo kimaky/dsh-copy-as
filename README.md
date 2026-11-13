@@ -1,6 +1,7 @@
 # dsh-copy-as
 
 [![test](https://github.com/kimaky/dsh-copy-as/actions/workflows/test.yml/badge.svg)](https://github.com/kimaky/dsh-copy-as/actions/workflows/test.yml)
+[![npm](https://img.shields.io/npm/v/dsh-copy-as.svg)](https://www.npmjs.com/package/dsh-copy-as)
 
 把 DSH 会话里的助手输出按需复制成六种格式，粘到别处不再丢版式。
 
