@@ -53,6 +53,6 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "jsdom": "^31.0.0"
+    "jsdom": "^26.1.0"
   }
 }
