@@ -1,5 +1,7 @@
 # dsh-copy-as
 
+[![test](https://github.com/kimaky/dsh-copy-as/actions/workflows/test.yml/badge.svg)](https://github.com/kimaky/dsh-copy-as/actions/workflows/test.yml)
+
 把 DSH 会话里的助手输出按需复制成六种格式，粘到别处不再丢版式。
 
 > **非官方插件。** 它通过 DSH 客户端插件机制接入，用到的是逆向得到的内部约定
